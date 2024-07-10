@@ -10,12 +10,12 @@
     <LinearLayout
         android:layout_width="409dp"
         android:layout_height="354dp"
-        android:layout_marginBottom="196dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="350dp"
@@ -27,7 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="電子郵件：" />
 
             <EditText
                 android:id="@+id/editTextText6"
@@ -50,7 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="密碼：" />
 
             <EditText
                 android:id="@+id/editTextText5"
@@ -74,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:text="登入" />
 
             <Button
                 android:id="@+id/button14"
@@ -82,14 +82,14 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:text="註冊" />
         </LinearLayout>
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="忘記密碼？"
             android:textAlignment="center" />
 
     </LinearLayout>
