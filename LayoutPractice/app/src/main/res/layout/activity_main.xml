@@ -19,8 +19,9 @@
         app:layout_constraintVertical_bias="0.4">
 
         <LinearLayout
-            android:layout_width="350dp"
+            android:layout_width="360dp"
             android:layout_height="50dp"
+            android:layout_margin="0dp"
             android:orientation="horizontal">
 
             <TextView
@@ -28,22 +29,25 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="電子郵件：" />
+                android:gravity="right"
+                android:text="電子郵件："
+                android:textColor="#3F51B5"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextText6"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="text"
-                android:text="Name" />
+                android:inputType="text" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="350dp"
+            android:layout_width="360dp"
             android:layout_height="50dp"
+            android:layout_margin="0dp"
             android:orientation="horizontal">
 
             <TextView
@@ -51,22 +55,24 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="密碼：" />
+                android:gravity="right"
+                android:text="密碼："
+                android:textColor="#3F51B5"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextText5"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="text"
-                android:text="Name" />
+                android:inputType="text" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_margin="50dp"
+            android:layout_margin="0dp"
             android:orientation="horizontal">
 
             <Button
@@ -75,7 +81,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
-                android:text="登入" />
+                android:backgroundTint="#D9678E"
+                android:text="登入"
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:id="@+id/button14"
@@ -83,6 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
+                android:backgroundTint="#FFAA2D"
                 android:text="註冊" />
         </LinearLayout>
 
@@ -90,8 +99,11 @@
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="0dp"
             android:text="忘記密碼？"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="#3F51B5"
+            android:textStyle="bold" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
