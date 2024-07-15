@@ -1,6 +1,8 @@
 package com.example.activitypractice2;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,26 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public void SentFruitName(View view){
+        //按下按鈕A，傳送"Strawberry"，按下按鈕B，傳送"Blueberry"
+        String fruit;
+        if (view.getId() == R.id.buttonA){
+            fruit = "Strawberry";
+        }else{
+            fruit = "Blueberry";
+        }
+
+        Intent intent = new Intent(this, FruitActivity.class);
+
+        //設定一個bundle來放資料
+        Bundle bundle = new Bundle();
+        bundle.putString("FRUIT",fruit);
+
+        //利用intent攜帶bundle的資料
+        intent.putExtras(bundle);
+        startActivity(intent);
+
     }
 }
