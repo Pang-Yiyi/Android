@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SecondActivity">
 
     <LinearLayout
         android:layout_width="413dp"
@@ -15,27 +15,26 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Strawberry" />
+            android:text="Blueberry" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/pexels_dana_tentis_118658_393768" />
+            app:srcCompat="@drawable/pexels_jessbaileydesign_895476" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="Go2SecondActivity"
-            android:text="Go to Blueberry" />
+            android:onClick="ExitActivity"
+            android:text="Close this activity" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,5 @@
 package com.example.activitypactice;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -10,13 +9,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class SecondActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_second);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -24,9 +23,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void Go2SecondActivity(View view){
-        Intent intent = new Intent(this, SecondActivity.class);
-        startActivity(intent);
-
+    public void ExitActivity(View view){
+        finish();
     }
 }
