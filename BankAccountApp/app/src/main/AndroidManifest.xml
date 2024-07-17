@@ -13,6 +13,15 @@
         android:theme="@style/Theme.BankAccountApp"
         tools:targetApi="31">
         <activity
+            android:name=".JPYCurrencyExchangeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TWDAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CurrencyExchangeActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
