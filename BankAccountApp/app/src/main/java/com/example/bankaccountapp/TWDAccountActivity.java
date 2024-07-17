@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
@@ -14,7 +13,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class TWDAccountActivity extends AppCompatActivity {
-    private double TWDTotal;
+    private double transactionAmount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,19 +27,17 @@ public class TWDAccountActivity extends AppCompatActivity {
         });
     }
 
-    public void TWDAccount(View view){
-        EditText money = (EditText)findViewById(R.id.money);
-
-        if(view.getId() == R.id.deposit){
-            double add = Double.parseDouble(money.getText().toString());
-            TWDTotal += add;
-        }else if(view.getId() == R.id.withdraw){
-            double minus = Double.parseDouble(money.getText().toString());
-            TWDTotal -= minus;
-        }
+    public void TWDAccount(View view) {
+        EditText money = findViewById(R.id.money);
+        transactionAmount = Double.parseDouble(money.getText().toString());
 
         Intent intent = new Intent();
-        intent.putExtra("TWDResult", TWDTotal);
+        if (view.getId() == R.id.deposit) {
+            intent.putExtra("TWDResult", transactionAmount);
+        } else if (view.getId() == R.id.withdraw) {
+            intent.putExtra("TWDResult", -transactionAmount);
+        }
+
         setResult(Activity.RESULT_OK, intent);
         finish();
     }

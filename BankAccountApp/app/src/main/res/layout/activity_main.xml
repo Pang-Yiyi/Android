@@ -94,8 +94,8 @@
                 android:textAlignment="textEnd" />
 
             <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
+                android:id="@+id/USDResult"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="0" />
@@ -109,8 +109,8 @@
                 android:textAlignment="textEnd" />
 
             <TextView
-                android:id="@+id/textView7"
-                android:layout_width="wrap_content"
+                android:id="@+id/JPYResult"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="0" />
@@ -127,6 +127,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
+                android:onClick="Go2USDExchange"
                 android:text="美金換匯" />
 
             <Button
@@ -135,6 +136,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
+                android:onClick="Go2JPYExchange"
                 android:text="日幣換匯" />
         </LinearLayout>
 
@@ -150,15 +152,15 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:text="操作結果："
-                android:textAlignment="textStart"
-                android:textSize="20sp" />
+                android:textAlignment="textEnd"
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/Result"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
-                android:textSize="20sp" />
+                android:textSize="25sp" />
         </LinearLayout>
 
     </LinearLayout>
