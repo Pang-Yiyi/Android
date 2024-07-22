@@ -28,9 +28,9 @@ public class JPYCurrencyExchangeActivity extends AppCompatActivity {
 
     public void JPYExchange(View view) {
         EditText money = findViewById(R.id.money);
-        EditText JPYRate = findViewById(R.id.JPYRate);
+        EditText Rate = findViewById(R.id.Rate);
 
-        double rate = Double.parseDouble(JPYRate.getText().toString());
+        double rate = Double.parseDouble(Rate.getText().toString());
         double J2T_Exchange = 0;
         double T2J_Exchange = 0;
 
