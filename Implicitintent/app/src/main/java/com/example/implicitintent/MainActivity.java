@@ -34,7 +34,20 @@ public class MainActivity extends AppCompatActivity {
 
     public void GotoFCU(View view){
         Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse("geo:24.179009705714066, 120.64653642571646"));
+        i.setData(Uri.parse("geo:0,0?q=逢甲大學"));
+        startActivity(i);
+    }
+
+    public void clickDIAL(View view){
+        Intent i = new Intent();
+        i.setAction(Intent.ACTION_DIAL);
+        startActivity(i);
+    }
+
+    public void callPhoneNumber(View view){
+        Intent i = new Intent();
+        i.setAction(Intent.ACTION_CALL);
+        i.setData(Uri.parse("tel:+12345"));
         startActivity(i);
     }
 }
